@@ -27,9 +27,9 @@ class BfhlServiceImplTest {
     void setUp() {
         service = new BfhlServiceImpl();
         // Inject @Value fields via reflection for unit testing
-        ReflectionTestUtils.setField(service, "userId", "yash_rai_26012005");
-        ReflectionTestUtils.setField(service, "email", "yashrai231351@acropolis.in");
-        ReflectionTestUtils.setField(service, "rollNumber", "0827CY231077");
+        ReflectionTestUtils.setField(service, "userId", "zunera_khan_26052006");
+        ReflectionTestUtils.setField(service, "email", "zunerakhan230140@acropolis.in");
+        ReflectionTestUtils.setField(service, "rollNumber", "0827CY231078");
     }
 
     // ==================== EXAMPLE TESTS FROM TASK SPEC ====================
@@ -41,9 +41,9 @@ class BfhlServiceImplTest {
         BfhlResponse response = service.processData(request);
 
         assertTrue(response.isSuccess());
-        assertEquals("yash_rai_26012005", response.getUserId());
-        assertEquals("yashrai231351@acropolis.in", response.getEmail());
-        assertEquals("0827CY231077", response.getRollNumber());
+        assertEquals("zunera_khan_26052006", response.getUserId());
+        assertEquals("zunerakhan230140@acropolis.in", response.getEmail());
+        assertEquals("0827CY231078", response.getRollNumber());
         assertEquals(List.of("1"), response.getOddNumbers());
         assertEquals(List.of("334", "4"), response.getEvenNumbers());
         assertEquals(List.of("A", "R"), response.getAlphabets());

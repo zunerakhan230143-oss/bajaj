@@ -33,9 +33,9 @@ class BfhlControllerTest {
                         .content(requestBody))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.is_success").value(true))
-                .andExpect(jsonPath("$.user_id").value("yash_rai_26012005"))
-                .andExpect(jsonPath("$.email").value("yashrai231351@acropolis.in"))
-                .andExpect(jsonPath("$.roll_number").value("0827CY231077"))
+                .andExpect(jsonPath("$.user_id").value("zunera_khan_26052006"))
+                .andExpect(jsonPath("$.email").value("zunerakhan230140@acropolis.in"))
+                .andExpect(jsonPath("$.roll_number").value("0827CY231078"))
                 .andExpect(jsonPath("$.odd_numbers[0]").value("1"))
                 .andExpect(jsonPath("$.even_numbers[0]").value("334"))
                 .andExpect(jsonPath("$.even_numbers[1]").value("4"))
@@ -67,7 +67,7 @@ class BfhlControllerTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.is_success").value(false))
-                .andExpect(jsonPath("$.user_id").value("yash_rai_26012005"));
+                .andExpect(jsonPath("$.user_id").value("zunera_khan_26052006"));
     }
 
     @Test
